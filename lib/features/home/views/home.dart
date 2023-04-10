@@ -6,8 +6,8 @@ import '../../../core/helper/helper.dart';
 import '../widgets/barchart_widget.dart';
 import '../widgets/chart_container.dart';
 import '../widgets/custom_icon.dart';
-import 'observation_fillter.dart';
 import '../widgets/scrollable_widget.dart';
+import 'observation_fillter.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -21,7 +21,7 @@ class Home extends StatelessWidget {
         child: Column(
           children: [
             ScrollableWidget(
-              height: 95,
+              height: 75,
               length: filters.length,
               separatedWidth: 15,
               itemBuilder: (context, index) {
@@ -45,9 +45,9 @@ class Home extends StatelessWidget {
                 );
               },
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 10),
             ScrollableWidget(
-              height: 50,
+              height: 45,
               length: filters.length,
               separatedWidth: 5,
               itemBuilder: (context, index) {

@@ -41,6 +41,7 @@ dependencies:
   fl_chart: ^0.61.0
   custom_radio_grouped_button:
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -81,6 +82,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+  - family: nunito
+    fonts:
+      - asset: assets\fonts\nunito.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:

@@ -1,6 +1,7 @@
 import 'package:custom_radio_grouped_button/custom_radio_grouped_button.dart';
 import 'package:flutter/material.dart';
 
+import '../data/color.dart';
 import '../data/data.dart';
 import 'arrow_botton.dart';
 
@@ -43,7 +44,7 @@ class ScrollableRadioButton extends StatelessWidget {
             defaultSelected: "1",
             unSelectedBorderColor: Color(0xffC4C4C4),
             selectedBorderColor: Color(0xff5F4BA3),
-            selectedColor: Color(0xff422B8F),
+            selectedColor: secendgrey,
             unSelectedColor: Colors.transparent,
           ),
         ),

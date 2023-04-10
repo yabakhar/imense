@@ -17,9 +17,7 @@ class CustomDropdown extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         border: Border.all(color: const Color(0xffC4C4C4)),
-        borderRadius: const BorderRadius.all(
-          Radius.circular(2),
-        ),
+        borderRadius: const BorderRadius.all(Radius.circular(2)),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 8),
       child: DropdownButton<dynamic>(

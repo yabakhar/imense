@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../data/color.dart';
+
 class RoomSwitch extends StatelessWidget {
   RoomSwitch({
     super.key,
@@ -19,9 +21,7 @@ class RoomSwitch extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         border: Border.all(color: const Color(0xffC4C4C4)),
-        borderRadius: const BorderRadius.all(
-          Radius.circular(2),
-        ),
+        borderRadius: const BorderRadius.all(Radius.circular(2)),
       ),
       child: Row(
         children: [
@@ -32,7 +32,7 @@ class RoomSwitch extends StatelessWidget {
               },
               child: Container(
                 alignment: Alignment.center,
-                color: (selected != true) ? Color(0xff422B8F) : Colors.white,
+                color: (selected != true) ? secendgrey : Colors.white,
                 child: Text(
                   leftValue,
                   style: TextStyle(
@@ -48,7 +48,7 @@ class RoomSwitch extends StatelessWidget {
                 onclickleft(false);
               },
               child: Container(
-                color: (selected == true) ? Color(0xff422B8F) : Colors.white,
+                color: (selected == true) ? secendgrey : Colors.white,
                 alignment: Alignment.center,
                 child: Text(
                   rightValue,

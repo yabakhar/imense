@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../../../core/data/color.dart';
+
 class SortItem extends StatelessWidget {
   SortItem({
     super.key,
@@ -23,7 +25,7 @@ class SortItem extends StatelessWidget {
               title,
               style: const TextStyle(
                 fontSize: 18,
-                color: Color(0xffABABAB),
+                color: primaryGray,
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -32,7 +34,7 @@ class SortItem extends StatelessWidget {
             flex: 1,
             child: Icon(
               Icons.arrow_forward_ios_rounded,
-              color: Color(0xffABABAB),
+              color: primaryGray,
             ),
           ),
         ],

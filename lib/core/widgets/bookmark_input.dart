@@ -16,6 +16,7 @@ class BookMarkInput extends StatelessWidget {
         borderRadius: const BorderRadius.all(
           Radius.circular(2),
         ),
+        
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

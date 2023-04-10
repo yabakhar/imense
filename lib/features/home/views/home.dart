@@ -6,7 +6,7 @@ import '../../../core/helper/helper.dart';
 import '../widgets/barchart_widget.dart';
 import '../widgets/chart_container.dart';
 import '../widgets/custom_icon.dart';
-import '../widgets/observation_fillter.dart';
+import 'observation_fillter.dart';
 import '../widgets/scrollable_widget.dart';
 
 class Home extends StatelessWidget {

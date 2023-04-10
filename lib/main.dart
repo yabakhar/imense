@@ -11,12 +11,9 @@ class Imense extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Namer App',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
-      ),
-      home:const  Dashboard(),
+    return const MaterialApp(
+      title: 'Imense',
+      home: Dashboard(),
     );
   }
 }

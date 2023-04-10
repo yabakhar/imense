@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../../alert/views/alert_screen.dart';
 import '../../home/views/home.dart';
 
 class Dashboard extends StatefulWidget {
@@ -11,7 +12,7 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
-  List<Widget> pages = [Home()];
+  List<Widget> pages = [const Home(), Container(), Container()];
   int currentPage = 0;
   @override
   Widget build(BuildContext context) {
@@ -27,12 +28,17 @@ class _DashboardState extends State<Dashboard> {
         toolbarHeight: 70,
         backgroundColor: Colors.white,
         actions: [
-          Container(
-            width: 35,
-            alignment: Alignment.center,
-            child: SvgPicture.asset(
-              "assets/icons/bell.svg",
-              height: 25,
+          InkWell(
+            onTap: () {
+               Navigator.of(context).push(MaterialPageRoute(builder: (context) => AlertScreen()));
+            },
+            child: Container(
+              width: 35,
+              alignment: Alignment.center,
+              child: SvgPicture.asset(
+                "assets/icons/bell.svg",
+                height: 25,
+              ),
             ),
           ),
           Container(

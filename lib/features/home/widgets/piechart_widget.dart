@@ -56,15 +56,4 @@ class Piechartwidget extends StatelessWidget {
     }).toList();
   }
 }
-// touchCallback: (FlTouchEvent event, pieTouchResponse) {
-//   setState(() {
-//     if (!event.isInterestedForInteractions ||
-//         pieTouchResponse == null ||
-//         pieTouchResponse.touchedSection == null) {
-//       touchedIndex = -1;
-//       return;
-//     }
-//     touchedIndex =
-//         pieTouchResponse.touchedSection!.touchedSectionIndex;
-//   });
-// },
+
